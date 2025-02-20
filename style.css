@@ -100,7 +100,7 @@ body main {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
       grid-template-rows: auto;
-      gap: 5%;
+      row-gap: 8%; column-gap: 5%;
       justify-content: space-between;
     }
     #dad_vail_logo, #knecht_logo {
@@ -115,7 +115,7 @@ body main {
       width: auto;
       grid-area: 1/1/3/2;
       mix-blend-mode: multiply;
-      position: relative; left: 5vw;
+      position: relative; left: 5vw; top: 5vh;
     }
     #races h3 {
       grid-area: 1/2/2/4;
@@ -127,11 +127,9 @@ body main {
       background-color: darkred;
       border-radius: 15px; 
       height: 12vh;
-      width: auto;
-      padding: 5%;
+      width: 10vw;
       color: bisque;
-      margin-left: 8vw;
-      margin-right: 5vw;
+     
     }
     .lineups {
       grid-area: 2/3/3/4;
@@ -140,8 +138,8 @@ body main {
       color: bisque;
       border-radius: 15px;
       height: 12vh;
-      width: auto;
-      margin-left: 5vw; margin-right: 5vw;
+      width: 10vw;
+      
     }
     .livestream {
       grid-area: 2/4/3/5;
@@ -150,9 +148,8 @@ body main {
       color: bisque;
       border-radius: 15px;
       height: 12vh;
-      width: auto;
-      margin-right: 8vw;
-      margin-left: 5vw;
+      width: 10vw;
+     
     }
     .schedule_link,.lineup_link,.livestream_link{
       text-decoration: none;
@@ -181,9 +178,7 @@ footer {
     font-size: 3rem;
     white-space: nowrap;
   }
-  #battle h3 {
-    font-size: 1rem;
-  }
+
   .navigation-menu {
     font-size: 1rem;
     white-space: nowrap;
