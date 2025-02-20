@@ -58,7 +58,7 @@ body main {
          }
       .wrapper
       {display: flex;} /*allows image to resize to fit viewport*/
-      .cover {
+      #sunrise_row {
         height: 100%;  /*image to fill container*/
         width: 100%;
         object-fit: cover;}
@@ -103,19 +103,23 @@ body main {
       row-gap: 8%; column-gap: 5%;
       justify-content: space-between;
     }
+    .race_logo{
+      display: flex;
+      grid-area: 1/1/3/2;
+      position:relative; left: 5vw;
+      margin:5%;
+    }
     #dad_vail_logo, #knecht_logo {
-      height:25vh;
-      width: auto;
+      object-fit: contain;
+      width:100%; height: 100%;
       grid-area: 1/1/3/2;
       mix-blend-mode: multiply;
-      position:relative; left: 5vw;
     }
     #marc_logo{
-      height:10vh;
-      width: auto;
       grid-area: 1/1/3/2;
+      object-fit: contain;
+      width:100%; height:100%;
       mix-blend-mode: multiply;
-      position: relative; left: 5vw; top: 5vh;
     }
     #races h3 {
       grid-area: 1/2/2/4;
@@ -169,6 +173,27 @@ footer {
   padding:5vh;
 }
 
+@media screen and (max-width: 400px){
+  .container{
+    font-size: 10px;
+  }
+  .title {
+    font-size: 2rem;
+    white-space: nowrap;
+  }
+  .navigation-menu {
+    font-size: 0.75 rem;
+    white-space: collapse;
+    justify-content: center;
+    gap: 1%;
+    flex-direction: column;
+  } 
+  #marc,#knecht, #dadvail{/*trying to make these sections move to a column layout as screen shrinks. no luck so far!*/
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+  }
+}
 
 @media screen and (max-width: 730px){
   .container{
@@ -178,7 +203,6 @@ footer {
     font-size: 3rem;
     white-space: nowrap;
   }
-
   .navigation-menu {
     font-size: 1rem;
     white-space: nowrap;
@@ -189,21 +213,6 @@ footer {
     top: 2.5%;
     left: 2.5%;
   }
+ 
 }
 
-@media screen and (max-width: 350px){
-  .container{
-    font-size: 10px;
-  }
-  .title {
-    font-size: 2rem;
-    white-space: nowrap;
-  }
-  .navigation-menu {
-    font-size: 0.75rem;
-    white-space: collapse;
-    justify-content: center;
-    gap: 1%;
-    text-wrap: none;
-  }
-}
