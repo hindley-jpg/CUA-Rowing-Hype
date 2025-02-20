@@ -108,14 +108,14 @@ body main {
       width: auto;
       grid-area: 1/1/3/2;
       mix-blend-mode: multiply;
-      position:relative; left: 22vw;
+      position:relative; left: 5vw;
     }
     #marc_logo{
       height:10vh;
       width: auto;
       grid-area: 1/1/3/2;
       mix-blend-mode: multiply;
-      position: relative; left: 23vw;
+      position: relative; left: 5vw;
     }
     #races h3 {
       grid-area: 1/2/2/4;
@@ -128,6 +128,7 @@ body main {
       border-radius: 15px; 
       height: 12vh;
       width: auto;
+      padding: 5%;
       color: bisque;
       margin-left: 8vw;
       margin-right: 5vw;
