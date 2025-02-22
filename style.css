@@ -49,106 +49,115 @@ main {
   grid-area: 3/1/14/13;
     background-color: darkred;
     padding-top: 10vh;
-}
-.picture_frame {
-  border: 5px solid bisque;
-  width: 960px;
-  height: 540px;
-  margin-left:auto;
-  margin-right:auto;
-}
-.wrapper {
-  display: flex;
-} /*allows image to resize to fit viewport*/
-#sunrise_row {
-  height: 100%;  /*image to fill container*/
-  width: 100%;
-  object-fit: cover;
-}
-.small_header {
-  color:bisque;
-  font-weight: bold;
-  text-align: center;
-  padding:5vh;
-  font-size: 2rem;
-}
-#line1{
-  color: bisque;
-}
-#poem, #cite {
-  color: bisque;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  text-align: center;
-}
-#about {
-  text-align: center;
-  padding: 5vh;
-  background-color: #ffd398;
-  color: #551a25;
-}
-#races{
-  background-color: #551a25;
-  padding: 5vh;
-  height: auto;
-  color: #ffd398;
-}
-.article {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 20px;
-  background-color: #ffd398;
-  color: darkred;
-  padding: 3vh;
-  padding-bottom: 4vh;
-  margin-bottom: 5vh;
-}
-.article-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-}
-
-.article-logo {
-  max-width: 10rem;
-  mix-blend-mode: multiply;
-}
-#races h3 {
-  grid-area: 1/2/2/4;
-  font-size: larger;
-}
-
-.article-links {
-  display: flex;
-  gap: 1rem;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-  margin: 0;
-}
-
-.article-links__item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: darkred;
-  border-radius: 15px;
-  height: 4rem;
-  width: 10vw;
-  color: bisque;
-  padding: 1rem;
-}
-
-.link {
-  text-decoration: none;
-  color:bisque;
-}
-
-.link:hover {
-  background-color: #7f2929;
+      .picture_frame {
+        border: 5px solid bisque;
+        width: 960px;
+        height: 540px;
+        margin-left:auto;
+        margin-right:auto;
+         }
+      .wrapper
+      {display: flex;} /*allows image to resize to fit viewport*/
+      .cover {
+        height: 100%;  /*image to fill container*/
+        width: 100%;
+        object-fit: cover;}
+    .small_header {color:bisque;
+        font-weight: bold;
+        text-align: center;
+        padding:5vh;
+        font-size: 2rem;
+        }
+    #line1{
+      color: bisque;
+    }
+    #poem, #cite {
+      color: bisque;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      text-align: center;
+    }
+    #about {
+      text-align: center;
+      padding: 5vh;
+      background-color: #ffd398;
+      color: #551a25;
+    }
+    #races{
+      background-color: #551a25;
+      padding: 5vh;
+      height: auto;
+      color: #ffd398;
+    }
+    #dadvail, #knecht, #marc{
+      height: auto;
+      border-radius: 20px;
+      background-color: #ffd398;
+      color: darkred;
+      padding: 3vh;
+      padding-bottom: 4vh;
+      margin-bottom: 5vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: auto;
+      row-gap: 8%; column-gap: 5%;
+      justify-content: space-between;
+    }
+    #dad_vail_logo, #knecht_logo {
+      height:25vh;
+      width: auto;
+      grid-area: 1/1/3/2;
+      mix-blend-mode: multiply;
+      position:relative; left: 5vw;
+    }
+    #marc_logo{
+      height:10vh;
+      width: auto;
+      grid-area: 1/1/3/2;
+      mix-blend-mode: multiply;
+      position: relative; left: 5vw; top: 5vh;
+    }
+    #races h3 {
+      grid-area: 1/2/2/4;
+      font-size: larger;
+    }
+    .schedule {
+      display: flex; align-items: center; justify-content: center; 
+      grid-area: 2/2/3/2;
+      background-color: darkred;
+      border-radius: 15px; 
+      height: 12vh;
+      width: 10vw;
+      color: bisque;
+     
+    }
+    .lineups {
+      grid-area: 2/3/3/4;
+      display: flex; align-items: center; justify-content: center; 
+      background-color: darkred;
+      color: bisque;
+      border-radius: 15px;
+      height: 12vh;
+      width: 10vw;
+      
+    }
+    .livestream {
+      grid-area: 2/4/3/5;
+      display: flex; align-items: center; justify-content: center;
+      background-color: darkred;
+      color: bisque;
+      border-radius: 15px;
+      height: 12vh;
+      width: 10vw;
+     
+    }
+    .schedule_link,.lineup_link,.livestream_link{
+      text-decoration: none;
+      color:bisque;
+    }
+    .schedule_link:hover, .lineup_link:hover, .livestream_link:hover{
+      background-color: #7f2929;
+    }
 }
 
 footer {
@@ -160,29 +169,6 @@ footer {
   padding:5vh;
 }
 
-@media screen and (max-width: 400px){
-  .container{
-    font-size: 10px;
-  }
-  .title {
-    font-size: 2rem;
-    white-space: nowrap;
-  }
-  .navigation-menu {
-    font-size: 0.75 rem;
-    white-space: collapse;
-    justify-content: center;
-    gap: 1%;
-    flex-direction: column;
-  } 
-
-  .article-links {
-    flex-direction: column;
-  }
-  .article-links__item {
-    width: 10rem;
-  }
-}
 
 @media screen and (max-width: 730px){
   .container{
@@ -202,10 +188,21 @@ footer {
     top: 2.5%;
     left: 2.5%;
   }
-
-  .article-content {
-    flex-direction: column;
-  }
- 
 }
 
+@media screen and (max-width: 350px){
+  .container{
+    font-size: 10px;
+  }
+  .title {
+    font-size: 2rem;
+    white-space: nowrap;
+  }
+  .navigation-menu {
+    font-size: 0.75rem;
+    white-space: collapse;
+    justify-content: center;
+    gap: 1%;
+    text-wrap: none;
+  }
+}
