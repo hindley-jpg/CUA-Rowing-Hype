@@ -173,9 +173,12 @@ footer {
 
 .gallery_photo{
   max-width: 25rem;
-  margin: 2rem;
+  margin: 1rem;
 }
-
+.figure{
+  display: inline-flex;
+  flex-direction: column;
+}
 
 @media screen and (max-width: 350px){
   .container{
