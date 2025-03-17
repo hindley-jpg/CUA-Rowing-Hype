@@ -171,6 +171,12 @@ footer {
   padding:5vh;
 }
 
+.gallery_photo{
+  max-width: 25rem;
+  margin: 2rem;
+}
+
+
 @media screen and (max-width: 350px){
   .container{
     font-size: 12px;
