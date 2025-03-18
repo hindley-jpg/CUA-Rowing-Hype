@@ -1,5 +1,6 @@
 html{
-  font-size: 16px;   
+  font-size: 16px;
+  max-width: 1280px;   
   }
 .container {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
@@ -45,7 +46,7 @@ h1{
   justify-content: right;
 }
 .navigation-menu_item {
-height:5vh; width: auto;
+height:5vh; width: auto; border-radius: 15px;
 }
 .navigation-menu__link{
   text-decoration: none;
