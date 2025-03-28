@@ -20,7 +20,7 @@
                 <a class="navigation-menu__link" href="#races">Upcoming Races</a>
              </li>
              <li class="navigation-menu__item">
-                <a class="navigation-menu__link" href="#footer">Contact Us</a>
+                <a class="navigation-menu__link" href="#gallery">Gallery</a>
              </li>
             </ul>
         </nav>
@@ -79,7 +79,7 @@
                         <li class="article-links__item">
                             <a class="link" href="https://www.youtube.com/channel/UCfhbFWVcmXq0qiU9WxZ_5XQ">Livestream</a>
                         </li>
-                    </div>
+                    </ul>
                 </div>
             </article>
             <article class="article"><!--no links currently available, but will update-->
@@ -114,12 +114,49 @@
                     </div>
                 </div>
             </article>
-            <article class="article" style = "background-color: darkred; color:bisque; font-family: cursive;">
+            <article id="gallery" class="article" style = "background-color: darkred; color:bisque; font-family: cursive;">
                 <img class = "gallery_photo" src="images\title.png" id = "gallery_title">
                 <div class = "article_content">
                     <figure class = "figure">
                         <img class = "gallery_photo"  src="images\HOCR.png" id ="charles">
-                        <figcaption>Head of the Charles 2024</figcaption>
+                        <figcaption>
+                            <button id="open" class="gallery_popup_button">Head of the Charles 2024</button>
+                            <div id="myModal"><!--create modal default shut, for photo gallery-->
+                                <article class = article style="margin: 2vw">
+                                    <p>Head of the Charles 2024</p>
+                                    <button id="x">X</button>
+                                    <div style="display: flex; flex-direction: row;">
+                                        <div class="gallery_column">
+                                             <figure class="figure">
+                                                 <img class="modal_photo"  src="images\HOCR images\IMG_1629.jpg" alt="">
+                                             </figure>
+                                             <figure class="figure">
+                                                  <img class="modal_photo" src="images\HOCR images\IMG_1697.jpg" style= "max-width: 15rem;"alt="">
+                                             </figure>
+                                        </div>
+                                        <div class="gallery_column">
+                                            <figure class="figure">
+                                                <img class="modal_photo" src="images\HOCR images\DR1_5412.jpeg" alt="">
+                                            </figure>
+                                            <figure class="figure">
+                                                 <img class="modal_photo" src="images\HOCR images\IMG_2684.jpg" alt="">
+                                            </figure>
+                                            <figure class="figure">
+                                                <img class="modal_photo" src="images\HOCR images\IMG_6439.jpeg" alt="">
+                                            </figure>
+                                        </div>
+                                        <div class="gallery_column">
+                                            <figure class="figure">
+                                                <img class="modal_photo" src="images\HOCR images\IMG_1649.jpg" alt="">
+                                            </figure>
+                                            <figure class="figure">
+                                                <img class="modal_photo" src="images\HOCR images\IMG_6314.jpg" alt="">
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </figcaption>
                     </figure>
                     <figure class = "figure">
                         <img class = "gallery_photo" src="images\Juniors.png" id ="junior">
@@ -139,6 +176,7 @@
                 <p>Photos courtesy of Katherine-Elizabeth Ma</p>
             </article>
         </section>
+        <script src="scripts\content.js"></script>
     </main>
     <footer id = "footer"> Contact Us hindley@cua.edu <!--add contact info-->
     </footer>
