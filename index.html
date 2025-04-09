@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <link rel="stylesheet" href ="style.css";>
 <head>
@@ -120,11 +121,11 @@
                     <figure class = "figure">
                         <img class = "gallery_photo"  src="images\HOCR.png" id ="charles">
                         <figcaption>
-                            <button id="open" class="gallery_popup_button">Head of the Charles 2024</button>
-                            <div id="myModal"><!--create modal default shut, for photo gallery-->
+                            <button class="open" id="open1">Head of the Charles 2024</button>
+                            <div id="myModal1" class="gallery_modal" data-modal="modal1"><!--create modal default shut, for photo gallery-->
                                 <article class = article style="margin: 2vw">
                                     <p>Head of the Charles 2024</p>
-                                    <button id="x">X</button>
+                                    <button id="x"class="xButton">X</button>
                                     <div style="display: flex; flex-direction: row;">
                                         <div class="gallery_column">
                                              <figure class="figure">
@@ -160,7 +161,44 @@
                     </figure>
                     <figure class = "figure">
                         <img class = "gallery_photo" src="images\Juniors.png" id ="junior">
-                        <figcaption>Junior Bonding at Head of the Schuylkill</figcaption>
+                        <figcaption>
+                            <button class="open" id="open2">Head of the Schuylkill</button>
+                            <div id="myModal2" class="gallery_modal" data-modal="modal2">
+                                <article class = article style="margin: 2vw">
+                                    <p>Head of the Schuylkill 2024</p>
+                                    <button id="x2" class="xButton">X</button>
+                                    <div style="display: flex; flex-direction: row;">
+                                        <div class="gallery_column">
+                                             <figure class="figure">
+                                                 <img class="modal_photo"  src="images\HOSR gallery\IMG_3240 2.jpg" alt="">
+                                             </figure>
+                                             <figure class="figure">
+                                                  <img class="modal_photo" src="images\HOSR gallery\IMG_3297 2.jpg" style= "max-width: 15rem;"alt="">
+                                             </figure>
+                                        </div>
+                                        <div class="gallery_column">
+                                            <figure class="figure">
+                                                <img class="modal_photo" src="images\HOSR gallery\IMG_3320 2.jpg" alt="">
+                                            </figure>
+                                            <figure class="figure">
+                                                 <img class="modal_photo" src="images\HOSR gallery\IMG_3333 2.jpg" alt="">
+                                            </figure>
+                                            <figure class="figure">
+                                               
+                                            </figure>
+                                        </div>
+                                        <div class="gallery_column">
+                                            <figure class="figure">
+                                                <img class="modal_photo" src="images\HOSR gallery\IMG_3368 2.jpg" alt="">
+                                            </figure>
+                                            <figure class="figure">
+                                                <img class="modal_photo" src="images\HOSR gallery\IMG_3565 2.jpg" alt="">
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </figcaption>
                     </figure>
                 </div>
                 <div class = "article_content">
@@ -178,7 +216,10 @@
         </section>
         <script src="scripts\content.js"></script>
     </main>
-    <footer id = "footer"> Contact Us hindley@cua.edu <!--add contact info-->
+    <footer id = "footer"> 
+        <button class="open"> 
+            <a href="https://www.instagram.com/catholicu_wrow/#" style="color:bisque; text-decoration: none;">Contact Us!</a>
+        </button>
     </footer>
 </body>
 </html>

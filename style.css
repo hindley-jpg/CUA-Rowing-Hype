@@ -153,7 +153,7 @@ main {
   color: bisque;
   padding: 1rem;
 }
-#x{
+.xButton{
   position: fixed;
   top: 3px; right:20px;
   padding:5px;
@@ -180,16 +180,17 @@ main {
   flex-direction: column;
 }
 .modal_photo{
-  max-width: 15rem;
+  max-width: 18rem;
   margin:1rem;
   border: 6px solid;
   border-color: darkred;
 }
-#myModal{
+.gallery_modal{
   display:none; position: fixed; inset:0px; background-color: bisque; border-radius:20px;
 }
-.gallery_popup_button{
-  font-family: cursive;
+
+.open{
+  font-family: cursive; 
   background-color: darkred; color:bisque; border-color:bisque; border-radius: 10px; padding: 10px;box-shadow: 4px 4px #551a25;
 }
 footer {
@@ -224,6 +225,9 @@ footer {
   .article-links__item {
     width: 10rem;
   }
+  .open{
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px){
@@ -248,6 +252,8 @@ footer {
   .article-content {
     flex-direction: column;
   }
- 
+ .open{
+  display: none;
+ }
 }
 
