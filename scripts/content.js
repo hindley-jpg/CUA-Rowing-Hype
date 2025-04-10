@@ -5,9 +5,11 @@ gallery.addEventListener("click", function(Event) {
   if (Event.target.id === 'open1') {
     // Open Modal 1
     modal1.style.display ='block';
+    modal1.style.overflow ='auto';
   } else if (Event.target.id === 'open2') {
     // Open Modal 2
     modal2.style.display = 'block';
+    modal2.style.display = 'auto';
   }
 });
 
