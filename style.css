@@ -260,7 +260,8 @@ footer {
     top: 3.5%;
     left: 3.5%;
   }
-
+  .results_photo{
+  max-width:15rem }
   .article-content {
     flex-direction: column;
   }
