@@ -174,9 +174,7 @@ main {
 }
 .results_photo{
   max-width: 30rem;
- mix-blend-mode: multiply;
-  border:5px;
-  border-color: darkred;
+  mix-blend-mode: multiply;
 }
 .gallery_column{
   display: flex; flex-direction: column;
@@ -235,6 +233,9 @@ footer {
   }
   .article-links__item {
     width: 10rem;
+  }
+  .results_photo{
+    max-width: 15rem;
   }
   .open{
     display: none;
